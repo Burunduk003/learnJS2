@@ -1,58 +1,21 @@
 "use strict";
 
-//console.log(1)
+const numberOfFilms = +prompt('сколько фильмов вы уже посмотрели?', '');
 
-// let number = 5;
-// const leftBorderWidth = 1;
+const PersonalMuvieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genders: [],
+    private: false
+};
 
-// const obj = {
-//     a: 50
-// };
+const q = prompt("Один из последних просмотренных фильмов?", ''),
+    q2 = prompt("На сколько оцените его?", ''),
+    q1 = prompt("Один из последних просмотренных фильмов?", ''),
+    q4 = prompt("На сколько оцените его?", '');
 
-// obj.a = 10;
-// console.log(obj);
+PersonalMuvieDB.movies[q] = q2;
+PersonalMuvieDB.movies[q1] = q4;
 
-// alert("Hello");
-
-// const result = confirm("are you here?");
-// console.log(result);
-
-// const answer = prompt("вам есть 18?", "Да");
-// console.log(typeof(answer));
-
-// const answers = [];
-
-// answers[0] = prompt('как ваше имя?', '');
-// answers[1] = prompt('ваша фамилия?', '');
-// answers[2] = prompt('сколько вам лет?', '');
-
-// document.write(answers);
-
-// console.log(typeof(answers));
-
-// const category = "toys";
-
-// console.log(`https://someurl.com/${category}/5`);
-
-// const user = 'Ivan';
-
-// alert(`Привет, ${user}`);
-
-let incr = 10,
-    decr = 10;
-
-// ++incr;
-// --decr;
-
-console.log(incr++);
-console.log(decr--);
-
-console.log(5%2);
-
-// = присваивание
-// == равенство
-// === строгое равенство (с учетом типа данных)
-
-const isChacked = true,
-      isClose = true;
-console.log(isChacked && isClose);
+console.log(PersonalMuvieDB);
