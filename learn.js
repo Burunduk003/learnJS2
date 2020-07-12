@@ -416,11 +416,15 @@ const soldier = {
     }
 };
 
-const john = {
-    health: 100,
-};
+const john = Object.create(soldier);
 
-john.__proto__ = soldier; //прорадителем объекта джон является объект солдат (устаревшая форма записи)
+// const john = {
+//     health: 100,
+// };
+
+// john.__proto__ = soldier; //прорадителем объекта джон является объект солдат (устаревшая форма записи)
+
+// Object.setPrototypeOf(john, soldier); // современная запись
 
 // console.log(john.armor);
 

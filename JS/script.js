@@ -40,13 +40,21 @@ const PersonalMuvieDB = {
         }
     },
     writeYourGenres: function () {
-        for (let i = 1; i < 4; i++) {
-            let genre = prompt(`Ваш любимый жанр под номером ${i}`, '');
-            if (genre == null || genre === '') {
+        for (let i = 1; i < 2; i++) {
+            // let genre = prompt(`Ваш любимый жанр под номером ${i}`, '');
+            // if (genre == null || genre === '') {
+            //     console.log('вы ввели некоректные данные или оставили строку пустой');
+            //     i--;
+            // } else {
+            //     PersonalMuvieDB.genres[i - 1] = genre;            
+            // }
+            let genres = prompt('введите ваши любимые жанры через запятую').toLowerCase();
+            if (genres == null || genres === '') {
                 console.log('вы ввели некоректные данные или оставили строку пустой');
                 i--;
             } else {
-                PersonalMuvieDB.genres[i - 1] = genre;            
+                PersonalMuvieDB.genres = genres.split(', ');
+                PersonalMuvieDB.genres.sort();
             }
         PersonalMuvieDB.genres.forEach((item, i) => {
             console.log(`Любимый жанр ${i + 1} - это ${item}`);
