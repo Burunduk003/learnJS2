@@ -42,3 +42,39 @@ link.addEventListener('click', (e) => {
     e.preventDefault();
     console.log(e.target);
 });
+
+
+// обработчики событий на мобильных устройствах
+
+// 1) touchstart
+// 2) touchmove
+// 3) touchend
+// 4) touchenter
+// 5) touchleave
+// 6) touchcancel
+
+window.addEventListener('DOMContentLoaded', () => {
+    const box = document.querySelector('.box');
+
+    box.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        console.log(e.touches);
+    });
+
+    box.addEventListener('touchmove', (e) => {
+        e.preventDefault();
+        console.log(e.targetTouches[0].pageX);
+    });
+
+    box.addEventListener('touchend', (e) => {
+        e.preventDefault();
+    });
+
+});
+
+// Свойства при работе с сенсорными устройствами
+
+// touches все пальцы которые в данный момент на экране
+// targetTouches тоже самое но на поределенном объекте
+// changedTouches список пальцев которые учавствуют в текущем событии. На пример если 4 пальца на экране, но 1 из них сделал событие touchend, то отобразится именно он.
+

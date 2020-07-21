@@ -434,73 +434,75 @@
 
 // 1)
 
-console.log(typeof(String(null)));
+// console.log(typeof(String(null)));
 
 // 2)
-console.log(typeof(5 + '')); // конкотинация: сложение строки с другим типом данных.
+// console.log(typeof(5 + '')); // конкотинация: сложение строки с другим типом данных.
 
-const num = 5;
-console.log('https//vk.com/catalog/' + num);
+// const num = 5;
+// console.log('https//vk.com/catalog/' + num);
 
-const fontSize = 26 + 'px';
+// const fontSize = 26 + 'px';
 
 // 2) to number первратить любой тип данных в число
 
 // 1)
 
-console.log(typeof(Number('null')));
+// console.log(typeof(Number('null')));
 
 // 2)
-console.log(typeof(+'null'));
+// console.log(typeof(+'null'));
 
 // 3)
 
-console.log(typeof(parseInt('15px', 10)));
+// console.log(typeof(parseInt('15px', 10)));
 
 // 3) to boolean перевод данных в булиновое значение
 
-0, '', null, undefined, NaN; // всегда false
+// 0, '', null, undefined, NaN; // всегда false
 
 // 1)
 
-let switcher = null;
+// let switcher = null;
 
-if (switcher) {
-    console.log('working...');
-}
+// if (switcher) {
+//     console.log('working...');
+// }
 
-switcher = 1;
+// switcher = 1;
 
-if (switcher) {
-    console.log('working...');
-}
+// if (switcher) {
+//     console.log('working...');
+// }
 
 // 2)
 
-console.log(typeof(Boolean('5')));
+// console.log(typeof(Boolean('5')));
 
 // 3)
 
-console.log(typeof(!!"45465"));
+// console.log(typeof(!!"45465"));
 
 
-let x = 5; alert(x++); // выдаст 5, а если будет ++Х то 6;
+// let x = 5; alert(x++); // выдаст 5, а если будет ++Х то 6;
 
-[] + false - null + true // будет NaN. [] пустой массив воспринимается как строка.
+// [] + false - null + true // будет NaN. [] пустой массив воспринимается как строка.
 
-[] + 1 + 2 // получится 12
+// [] + 1 + 2 // получится 12
 
-alert( "1"[0] ) // выведет 1. Так как в строке "1" всего 1 символ и его индекс как раз 0. [0] это индекс.
+// alert( "1"[0] ) // выведет 1. Так как в строке "1" всего 1 символ и его индекс как раз 0. [0] это индекс.
 
-2 && 1 && null && 0 && undefined  // выдаст null. так как Null это первая ложь в этой цепочке.
+// 2 && 1 && null && 0 && undefined  // выдаст null. так как Null это первая ложь в этой цепочке.
 // оператор И (&&) запинается на лжи.
 // Или (||) запинается на правде
 
-!!( a && b ) и (a && b)? // не равны так как в первом случае у нас получается булиновый тип данных, а во втором b
+// !!( a && b ) и (a && b)? // не равны так как в первом случае у нас получается булиновый тип данных, а во втором b
 
-                  3
-alert( null || 2 && 3 || 4 ); // получим 3. первым выполняется 2 и 3. получаем 3. Далее Null или 3 => получаем 3. И далее 3 или 4 => получаем опять таки 3.
+//                  3
+// alert( null || 2 && 3 || 4 ); // получим 3. первым выполняется 2 и 3. получаем 3. Далее Null или 3 => получаем 3. И далее 3 или 4 => получаем опять таки 3.
 
 // a = [1, 2, 3]; b = [1, 2, 3]; Правда ли что a == b ? Не правда. Это 2 разных массива, хоть и с одинаковыми данными.
 
-"Ёжик" > "яблоко" // в данном случае будет false, но вообще такое сравнение корректно и строки сравниваются посимвольно.
+// "Ёжик" > "яблоко" // в данном случае будет false, но вообще такое сравнение корректно и строки сравниваются посимвольно.
+
+// onclick="alert('Click')" обработчик событий непосредственно в HTML коде.

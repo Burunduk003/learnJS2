@@ -4,9 +4,9 @@
 // console.log(document.documentElement);
 // console.log(document.body.childNodes); позволяет получить все узлы HTML документа
 // console.log(document.body.firstChild);
-console.log(document.body.firstElementChild); // первый элемент тега body
+// console.log(document.body.firstElementChild); // первый элемент тега body
 // console.log(document.body.lastChild);
-console.log(document.body.lastElementChild); // последний элемент тега body
+// console.log(document.body.lastElementChild); // последний элемент тега body
 
 // console.log(document.querySelector('#current').parentNode.parentNode); // получения родителя элемента с id current, а потом родителя его родителя и тд.
 // console.log(document.querySelector('#current').parentElement); // поучение родительского элемента
